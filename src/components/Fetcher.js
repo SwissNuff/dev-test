@@ -29,8 +29,9 @@ const Fetcher = () => {
   }, [fetchNew]);
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <pre>{displayText}</pre>
+      <br />
       <button className="back" onClick={newFetch}>
         <span className="front">FETCH API</span>
       </button>
