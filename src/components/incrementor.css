@@ -19,3 +19,9 @@
 .back:active .front {
   transform: translateY(-2px);
 }
+
+.depth {
+  font-size: 5em;
+  color: #374151;
+  transform: translateY(-5px);
+}
