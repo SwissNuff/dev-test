@@ -1,0 +1,48 @@
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  min-width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.count-btn {
+  cursor: pointer;
+  background-color: gray;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 15px 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+.count-btn:hover {
+  background-color: rgb(110, 110, 110);
+}
