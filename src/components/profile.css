@@ -1,0 +1,19 @@
+.post-container {
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 8px 14px 25px 14px;
+}
+
+.profile {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 50%;
+}

@@ -5,6 +5,7 @@ import React from "react";
 import Counter from "./components/Counter";
 import Fetcher from "./components/Fetcher";
 import Profile from "./components/Profile";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
         </nav>
         <Switch>
           <Route exact path="/">
-            <Counter />
+            <Profile />
           </Route>
           <Route path="/fetcher">
             <Fetcher />
