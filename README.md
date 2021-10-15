@@ -5,9 +5,9 @@
 
 [Project Demo](https://www.loom.com/share/dd0b63f00eaf404fbc12e370b046a58b)
 
-![image](https://user-images.githubusercontent.com/39580184/137432766-a958f2fb-eb86-4aa0-a569-9fd22dbbfeb5.png =250x)
-![image](https://user-images.githubusercontent.com/39580184/137432784-adfad4d5-d4f5-44ac-9915-8f8fe2e743bc.png =250x)
-![image](https://user-images.githubusercontent.com/39580184/137432736-86d6ca77-0c1e-4dd2-9a3a-2838f7321146.png =250x)
+<img src="https://user-images.githubusercontent.com/39580184/137432766-a958f2fb-eb86-4aa0-a569-9fd22dbbfeb5.png" width="250px">
+<img src="https://user-images.githubusercontent.com/39580184/137432784-adfad4d5-d4f5-44ac-9915-8f8fe2e743bc.png" width="250px">
+<img src="https://user-images.githubusercontent.com/39580184/137432736-86d6ca77-0c1e-4dd2-9a3a-2838f7321146.png" width="250px">
 
 
 ## How to run
