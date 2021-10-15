@@ -3,9 +3,7 @@
 
 ## Project Demo
 
-[Stage 1 Demo](https://www.loom.com)//
-[Stage 2 Demo](https://www.loom.com)//
-[Stage 3 Demo](https://www.loom.com)//
+[Project Demo](https://www.loom.com/share/dd0b63f00eaf404fbc12e370b046a58b)
 
 ## How to run
 
