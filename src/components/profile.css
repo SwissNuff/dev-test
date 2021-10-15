@@ -1,7 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
 .post-container {
-  border: 1px solid gray;
+  max-width: 35vw;
+  border: 1px solid lightgray;
   border-radius: 24px;
-  padding: 8px 14px 25px 14px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.post-container:hover {
+  background-color: rgb(239, 244, 245);
 }
 
 .profile {
@@ -14,6 +30,37 @@
   flex-direction: column;
 }
 
+.footer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-bottom: 1px solid lightgray;
+  padding: 4px 0;
+}
+
 img {
   border-radius: 50%;
+}
+
+.details {
+  font-weight: 500;
+  color: rgb(128, 151, 158);
+}
+
+.name {
+  font-weight: 600;
+}
+
+span {
+  margin: 1px;
+}
+
+.hashtag {
+  color: #0099ff;
 }

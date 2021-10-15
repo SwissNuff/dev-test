@@ -12,7 +12,6 @@ const Counter = () => {
   return (
     <div className="container">
       <h1 className="depth">{count}</h1>
-      <br />
       <button className="back" onClick={addCount}>
         <span className="front">PUSH TO ADD</span>
       </button>

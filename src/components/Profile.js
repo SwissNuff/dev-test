@@ -1,6 +1,7 @@
 import React from "react";
 import "./profile.css";
 import { useState, useEffect } from "react";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 const Profile = () => {
   const [username, setUsername] = useState("df");
@@ -10,9 +11,20 @@ const Profile = () => {
   const [country, setCountry] = useState("");
   const [fetchNew, setFetchNew] = useState(0);
   const [image, setImage] = useState("");
+  const [isLiked, setIsLiked] = useState(false);
 
   const newFetch = () => {
     setFetchNew((prevCount) => prevCount + 1);
+  };
+
+  const likeOnClick = () => {
+    if (isLiked == false) {
+      setIsLiked(true);
+      setNumber((prevCount) => prevCount + 1);
+    } else {
+      setIsLiked(false);
+      setNumber((prevCount) => prevCount - 1);
+    }
   };
 
   useEffect(() => {
@@ -28,6 +40,7 @@ const Profile = () => {
         setDate(json.results[0].registered.date.slice(0, 10));
         setNumber(json.results[0].location.street.number);
         setImage(json.results[0].picture.medium);
+        setIsLiked(false);
       } catch (error) {
         console.log("error", error);
       }
@@ -37,31 +50,48 @@ const Profile = () => {
   }, [fetchNew]);
 
   return (
-    <>
+    <div className="container">
       <div className="post-container">
         <div className="profile">
-          <img src={image} width="68" height="68" />
+          <img src={image} width="48" height="48" />
           <div className="flex-col">
-            <span>{name}</span>
-            <span>@{username}</span>
+            <span className="name">{name}</span>
+            <span className="details">@{username}</span>
           </div>
         </div>
         <div className="content">
           <span>
-            Hi! I'm {name}, a software developer based in {country}.
+            Hi! I'm {name}, a software developer based in {country}.<br />
+            <br />
+            This is my first dev twit!
           </span>
-          <span>{date}</span>
-          <span>{number}</span>
+          <div>
+            <span className="hashtag">#GDSC </span>
+            <span className="hashtag">#DeveloperTwit</span>
+          </div>
+          <span className="details">{date}</span>
         </div>
-        <hr />
-        <div className="footer"></div>
+        <div className="footer">
+          {isLiked ? (
+            <AiFillHeart
+              onClick={likeOnClick}
+              style={{ color: "#EA4335" }}
+              size={18}
+            />
+          ) : (
+            <AiOutlineHeart
+              onClick={likeOnClick}
+              style={{ color: "rgb(128, 151, 158)" }}
+              size={18}
+            />
+          )}
+          <span className="details">{number}</span>
+        </div>
       </div>
-      <br />
-      <br />
       <button className="back" onClick={newFetch}>
         <span className="front">Refresh Feed</span>
       </button>
-    </>
+    </div>
   );
 };
 
