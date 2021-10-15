@@ -1,9 +1,7 @@
 # developer-test
  A simple project for developer test
 
-## Project Demo
-
-[Project Demo](https://www.loom.com/share/dd0b63f00eaf404fbc12e370b046a58b)
+## [Project Demo Video](https://www.loom.com/share/dd0b63f00eaf404fbc12e370b046a58b)
 
 <img src="https://user-images.githubusercontent.com/39580184/137432766-a958f2fb-eb86-4aa0-a569-9fd22dbbfeb5.png" width="600px">
 <img src="https://user-images.githubusercontent.com/39580184/137432784-adfad4d5-d4f5-44ac-9915-8f8fe2e743bc.png" width="600px">
